@@ -84,7 +84,9 @@ def zero_changer(tuple_of_lists):
     for k in range(len(tuple_of_lists)):
         for j in range(tuple_of_lists[k]):
             if tuple_of_lists[j] == 0:
-
+                tuple_of_lists[j] = k
+            else:
+                tuple_of_lists[j] = tuple_of_lists[j]
     # -------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
